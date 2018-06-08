@@ -1,0 +1,24 @@
+---
+title: "Developing Data Products Week 3 Project"
+author: "Shaoqing Ying"
+date: "8 Juni 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data for Plot
+
+```{r warning=F, message=F}
+library(plotly)
+head(mtcars)
+```
+
+## Slide with Plotly
+
+```{r warning=F, message=F}
+plot_ly(mtcars, x = ~wt, y = ~hp, color = ~am) 
+```
+
